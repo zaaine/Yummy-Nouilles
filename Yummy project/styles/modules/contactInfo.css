@@ -1,0 +1,21 @@
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4.5rem 0 4.5rem 0;
+}
+
+.contactInfo__title {
+    margin-bottom: 1rem;
+}
+
+.contactInfo__text {
+    text-align: center;
+    margin: 0 0 0 0;
+    width: 85%;
+}
+@media (max-width: 768px) {
+    .contactInfo__text {
+      max-width: 16rem;
+    }
+  }

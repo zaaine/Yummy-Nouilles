@@ -1,1 +1,0 @@
-{"version":3,"sources":["footer.scss","../variables.scss","footer.css","../mixin.scss"],"names":[],"mappings":"AAGA;EACE,aAAA;EACA,mBAAA;EACA,oBAAA;EACA,yBCHM;EDIN,cCHM;EDIN,oBAAA;AEFF;AFIE;EACE,cCoBe;EDnBf,eCmBe;EDlBf,oBAAA;EACA,+BAAA;AEFJ;AFII;EACE,qBAAA;AEFN;ACdI;EHCJ;IAoBI,uBAAA;IACA,kBAAA;EEHF;EFKE;IACE,oBCkBwB;IDjBxB,qBCiBwB;ECpB5B;AACF","file":"footer.css"}

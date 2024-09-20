@@ -1,0 +1,32 @@
+@import "../variables";
+@import "../mixin.scss";
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  background-color: $black;
+  color: $white;
+  padding: 5rem 4.5rem;
+
+  &__icon {
+    width: $footer-icon-size;
+    height: $footer-icon-size;
+    margin-left: 3.25rem;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  @include respond-to(small) {
+    justify-content: center;
+    padding: 4.75rem 0;
+
+    &__icon {
+      margin-left: $mobile-margin-navItem-right;
+      margin-right: $mobile-margin-navItem-right;
+    }
+  }
+}

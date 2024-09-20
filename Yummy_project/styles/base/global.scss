@@ -1,0 +1,58 @@
+@import "../variables"; // Importer les variables pour les couleurs, polices, etc.
+
+/* Styles globaux pour le projet */
+body {
+  font-family: $body-font;
+  font-weight: $body-font-weight;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  background-color: $light-grey;
+  color: $black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font;
+  color: $black;
+}
+
+h1 {
+  font-size: $header-font-size;
+  line-height: $header-line-height;
+}
+
+h2 {
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+  text-decoration: underline $red-highlight;
+  text-underline-offset: 0.25rem;
+  text-decoration-thickness: 0.188rem;
+}
+
+/* Liens */
+a {
+  color: $red-highlight;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: darken($red-highlight, 10%);
+  }
+}
+
+/* Classes utilitaires */
+.text-center {
+  text-align: center;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}

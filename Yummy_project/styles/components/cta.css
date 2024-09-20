@@ -1,0 +1,10 @@
+.cta {
+  background-color: #d2483d;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.cta:hover {
+  background-color: #b33429;
+  transform: scale(1.05);
+}/*# sourceMappingURL=cta.css.map */

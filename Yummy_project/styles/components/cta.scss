@@ -1,0 +1,13 @@
+@import "../variables";
+
+.cta {
+  background-color: $red-highlight;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    background-color: adjust-color($red-highlight, $lightness: -10%);
+    transform: scale(1.05);
+  }
+}

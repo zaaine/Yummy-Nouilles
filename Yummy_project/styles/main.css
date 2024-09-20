@@ -1,100 +1,295 @@
-/* Design System */
-  @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Manrope&family=Montserrat:wght@400;600&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Manrope&family=Montserrat&display=swap');
-
-/* Pages */
-@import 'pages/home.css';
-@import 'pages/menu.css';
-@import 'pages/contact.css';
-
-/* Modules */
-@import 'modules/appBar.css';
-@import 'modules/cta.css';
-@import 'modules/redBanner.css';
-@import 'modules/contactInfo.css';
-@import 'modules/footer.css';
-
-:root {
-  /* Colors */
-  --red-highlight: #D2483D;
-  --light-grey: #F3F3F3;
-  --black: #000000;
-  --white: #FFFFFF;
-  
-  
-  /* Text configuration */
-  --body-font: 'Montserrat';
-  --body-highlight-font: 'Montserrat';
-  --header-font: 'Bebas Neue';
-  --title-font: 'Bebas Neue';
-  
-  
-  --body-font-weight: 400;
-  --body-highlight-font-weight: 600;
-  --header-font-weight: 400;
-  --title-font-weight: 400;
-  
-  --body-font-size: 1.25rem;
-  --body-highlight-font-size: 1.25rem;
-  --header-font-size: 4.5rem;
-  --title-font-size: 1.5rem;
-  
-  --body-line-height: 1.5rem;
-  --body-highlight-line-height: 1.5rem;
-  --header-line-height: 5.375rem;
-  --title-line-height: 1.75rem;
+@charset "UTF-8";
+/* Styles globaux pour le projet */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  background-color: #f3f3f3;
+  color: #000000;
 }
 
-body {
-  background-color: var(--light-grey);
-  font-family: var(--body-font);
-  font-style: normal;
-  font-weight: var(--body-font-weight);
-  font-size: var(--body-font-size);
-  line-height: var(--body-line-height);
-  color: var(--black);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Belanosima", sans-serif;
+  color: #000000;
 }
 
 h1 {
-  font-family: var(--header-font);
-  font-style: normal;
-  font-weight: var(--header-font-weight);
-  font-size: var(--header-font-size);
-  line-height: var(--header-line-height);
-  color: var(--black);
+  font-size: 4.5rem;
+  line-height: 5.375rem;
 }
 
 h2 {
-  font-family: var(--title-font);
-  font-style: normal;
-  font-weight: var(--title-font-weight);
-  font-size: var(--title-font-size);
-  line-height: var(--title-line-height);
-  color: var(--black);
-  text-decoration: underline var(--red-highlight);
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  text-decoration: underline #d2483d;
   text-underline-offset: 0.25rem;
   text-decoration-thickness: 0.188rem;
 }
 
-.color-highlight {
-  color: var(--red-highlight);
+/* Liens */
+a {
+  color: #d2483d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: rgb(178.5774058577, 51.5481171548, 41.4225941423);
 }
 
-.text-highlight {
-  font-weight: var(--body-hightlight-font-weight);
+/* Classes utilitaires */
+.text-center {
+  text-align: center;
 }
 
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.appBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem 0 1rem 3rem;
+}
+.appBar__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.appBar__nav {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+.appBar__navItem {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #000000;
+  text-decoration: none;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+.appBar__navItem:hover {
+  color: #d2483d;
+}
+.appBar__navItem.active {
+  text-decoration: underline #d2483d;
+}
 @media (max-width: 768px) {
-  :root {
-    /* Mobile Variables */
-    --body-font-size: 1rem;
-    --body-highlight-font-size: 1rem;
-    --header-font-size: 2.5rem;
-    --title-font-size: 1.25rem;
-
-    --body-line-height: 1.25rem;
-    --body-highlight-line-height: 1.25rem;
-    --header-line-height: 3rem;
-    --title-line-height: 1.5rem;
+  .appBar {
+    flex-direction: column;
+    padding: 2.75rem 0;
+    justify-content: center;
+  }
+  .appBar__icon {
+    width: 3rem;
+    height: 3rem;
   }
 }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5rem 4.5rem;
+}
+.footer__icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-left: 3.25rem;
+  transition: transform 0.3s ease;
+}
+.footer__icon:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .footer {
+    justify-content: center;
+    padding: 4.75rem 0;
+  }
+  .footer__icon {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+}
+
+.redBanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #d2483d;
+  color: #ffffff;
+  padding: 3.75rem 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.redBanner.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+.redBanner__title {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .redBanner {
+    padding: 2.75rem 0;
+  }
+  .redBanner__title {
+    margin-bottom: 2rem;
+  }
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4.5rem 0;
+}
+.contactInfo__title {
+  font-family: "Belanosima", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 1rem;
+}
+.contactInfo__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  text-align: center;
+  width: 85%;
+  color: #000000;
+}
+@media (max-width: 768px) {
+  .contactInfo__text {
+    max-width: 16rem;
+  }
+}
+
+.cta {
+  background-color: #d2483d;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.cta:hover {
+  background-color: rgb(178.5774058577, 51.5481171548, 41.4225941423);
+  transform: scale(1.05);
+}
+
+/* Styles globaux pour le projet */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  background-color: #f3f3f3;
+  color: #000000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Belanosima", sans-serif;
+  color: #000000;
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 5.375rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  text-decoration: underline #d2483d;
+  text-underline-offset: 0.25rem;
+  text-decoration-thickness: 0.188rem;
+}
+
+/* Liens */
+a {
+  color: #d2483d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: rgb(178.5774058577, 51.5481171548, 41.4225941423);
+}
+
+/* Classes utilitaires */
+.text-center {
+  text-align: center;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+/* Reset des styles par défaut des navigateurs */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

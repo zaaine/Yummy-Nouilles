@@ -1,0 +1,50 @@
+@import "../variables";
+@import "../mixin.scss";
+
+.appBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: $padding-appBar-vertical 0 $padding-appBar-vertical
+    $padding-appBar-horizontal;
+
+  &__icon {
+    width: $appBar-icon-size;
+    height: $appBar-icon-size;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+  }
+
+  &__navItem {
+    font-family: $title-font;
+    font-weight: $title-font-weight;
+    font-size: $title-font-size;
+    color: $black;
+    text-decoration: none;
+    margin-right: $margin-navItem-right;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $red-highlight;
+    }
+
+    &.active {
+      text-decoration: underline $red-highlight;
+    }
+  }
+
+  @include respond-to(small) {
+    flex-direction: column;
+    padding: $mobile-padding-appBar-vertical 0;
+    justify-content: center;
+
+    &__icon {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}

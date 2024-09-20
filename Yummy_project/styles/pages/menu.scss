@@ -1,0 +1,54 @@
+@import "../variables.scss";
+@import "../mixin.scss";
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin: 0 9.5rem;
+  align-items: center;
+
+  @include respond-to(small) {
+    margin: 0 2rem;
+  }
+}
+
+.menu__title {
+  margin: 2.25rem 0 0 0;
+}
+
+.menu__subtitle {
+  margin: 0 0 2.25rem 0;
+}
+
+.menu__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+  text-align: center;
+}
+
+.menu__icon {
+  width: 9rem;
+  height: 9rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+
+  @include respond-to(small) {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+.menu__part {
+  margin-bottom: 3.75rem;
+}
+
+.menu__partTitle {
+  margin-bottom: 1.75rem;
+}
+
+.menu__partDish {
+  margin-bottom: 2rem;
+  line-height: 2.5rem;
+}

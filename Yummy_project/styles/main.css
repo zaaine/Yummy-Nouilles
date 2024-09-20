@@ -1,4 +1,48 @@
 @charset "UTF-8";
+/* Reset des styles par défaut des navigateurs */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 /* Styles globaux pour le projet */
 body {
   font-family: "Montserrat", sans-serif;
@@ -27,7 +71,8 @@ h1 {
 h2 {
   font-size: 1.5rem;
   line-height: 1.75rem;
-  text-decoration: underline #d2483d;
+  -webkit-text-decoration: underline #d2483d;
+          text-decoration: underline #d2483d;
   text-underline-offset: 0.25rem;
   text-decoration-thickness: 0.188rem;
 }
@@ -37,9 +82,6 @@ a {
   color: #d2483d;
   text-decoration: none;
   transition: color 0.3s ease;
-}
-a:hover {
-  color: rgb(178.5774058577, 51.5481171548, 41.4225941423);
 }
 
 /* Classes utilitaires */
@@ -83,7 +125,8 @@ a:hover {
   color: #d2483d;
 }
 .appBar__navItem.active {
-  text-decoration: underline #d2483d;
+  -webkit-text-decoration: underline #d2483d;
+          text-decoration: underline #d2483d;
 }
 @media (max-width: 768px) {
   .appBar {
@@ -188,108 +231,6 @@ a:hover {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .cta:hover {
-  background-color: rgb(178.5774058577, 51.5481171548, 41.4225941423);
+  background-color: #b33429;
   transform: scale(1.05);
-}
-
-/* Styles globaux pour le projet */
-body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-  background-color: #f3f3f3;
-  color: #000000;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Belanosima", sans-serif;
-  color: #000000;
-}
-
-h1 {
-  font-size: 4.5rem;
-  line-height: 5.375rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-  line-height: 1.75rem;
-  text-decoration: underline #d2483d;
-  text-underline-offset: 0.25rem;
-  text-decoration-thickness: 0.188rem;
-}
-
-/* Liens */
-a {
-  color: #d2483d;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-a:hover {
-  color: rgb(178.5774058577, 51.5481171548, 41.4225941423);
-}
-
-/* Classes utilitaires */
-.text-center {
-  text-align: center;
-}
-
-.mb-2 {
-  margin-bottom: 2rem;
-}
-
-.mt-2 {
-  margin-top: 2rem;
-}
-
-/* Reset des styles par défaut des navigateurs */
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  line-height: 1.5;
-  font-family: "Montserrat", sans-serif;
-  color: #000000;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-button {
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

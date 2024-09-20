@@ -1,4 +1,4 @@
-@import "../variables"; // Importer les variables pour les couleurs, polices, etc.
+@import "../variables.scss";
 
 /* Styles globaux pour le projet */
 body {
@@ -39,9 +39,9 @@ a {
   text-decoration: none;
   transition: color 0.3s ease;
 
-  &:hover {
-    color: darken($red-highlight, 10%);
-  }
+  // &:hover {
+  //   color: darken($red-highlight, 10%);
+  // }
 }
 
 /* Classes utilitaires */

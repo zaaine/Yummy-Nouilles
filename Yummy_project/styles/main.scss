@@ -1,10 +1,11 @@
 @import "./base/reset.scss";
 @import "./base/global.scss";
-@import "variables";
-@import "./mixin";
-@import "base/global";
-@import "layout/appBar";
-@import "layout/footer";
-@import "components/redBanner";
-@import "components/contactInfo";
-@import "components/cta";
+@import "./variables.scss";
+@import "./mixin.scss";
+
+@import "./layout/appBar.scss";
+@import "./layout/footer.scss";
+@import "./components/redBanner.scss";
+@import "./components/contactInfo.scss";
+@import "./components/cta.scss";
+@import "./pages/";

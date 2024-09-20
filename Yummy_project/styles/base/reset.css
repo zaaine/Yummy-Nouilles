@@ -1,5 +1,4 @@
-@import "../variables.scss";
-
+@charset "UTF-8";
 /* Reset des styles par défaut des navigateurs */
 *,
 *::before,
@@ -19,8 +18,8 @@ body {
 
 body {
   line-height: 1.5;
-  font-family: $body-font;
-  color: $black;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
 }
 
 a {
@@ -42,4 +41,4 @@ button {
   border: none;
   background: none;
   cursor: pointer;
-}
+}/*# sourceMappingURL=reset.css.map */

@@ -2,9 +2,69 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>Yummy Nouilles - Accueil</title>
     <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="canonical" href="https://www.yummy_nouilles.com/index.html" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Yummy Nouilles - Meilleurs Nouilles à Paris"
+    />
+    <meta
+      property="og:description"
+      content="Découvrez les meilleures nouilles d'Asie de l’Est au cœur de Paris. Commandez en Click & Collect dès maintenant !"
+    />
+    <meta
+      property="og:image"
+      content="https://www.yummy_nouilles.com/assets/logo.svg"
+    />
+    <meta property="og:url" content="https://yummy_nouilles/index.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Yummy Nouilles - Meilleurs Nouilles à Paris"
+    />
+    <meta
+      name="twitter:description"
+      content="Découvrez les meilleures nouilles d'Asie de l’Est au cœur de Paris. Commandez en Click & Collect dès maintenant !"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.yummy_nouilles/assets/logo.svg"
+    />
+
+    <meta
+      name="description"
+      content="Yummy Nouilles propose les meilleures nouilles d'Asie de l’Est au cœur de Paris. Découvrez nos restaurants, commandez en Click & Collect et retrouvez-nous sur les réseaux sociaux."
+    />
+    <title>Yummy Nouilles - Meilleurs Nouilles à Paris | Click & Collect</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Yummy Nouilles",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "185 rue du Lancry",
+          "addressLocality": "Paris",
+          "postalCode": "75010",
+          "addressCountry": "FR"
+        },
+        "telephone": "01 13 86 23 42",
+        "image": "https://www.votresite.com/assets/logo.svg",
+        "url": "https://www.votresite.com/index.html",
+        "sameAs": [
+          "https://www.instagram.com/yummy_nouilles/",
+          "https://www.facebook.com/yummy_nouilles/",
+          "https://www.google.com/search?q=yummy+nouilles"
+        ]
+      }
+    </script>
   </head>
 
   <body>
@@ -13,6 +73,7 @@
         src="assets/logo.svg"
         alt="Logo Yummy Nouilles"
         class="appBar__icon"
+        loading="lazy"
       />
       <nav class="appBar__nav">
         <a class="appBar__navItem active" href="index.html">Accueil</a>
@@ -34,6 +95,7 @@
           src="assets/logo.svg"
           alt="Logo Yummy Nouilles"
           class="hero__icon"
+          loading="lazy"
         />
       </section>
       <section class="address">
@@ -44,6 +106,7 @@
               src="assets/restaurants/yummy_lancry.jpg"
               alt="Photo du restaurant Yummy Nouilles rue du Lancry à Paris"
               class="address__img"
+              loading="lazy"
             />
             <p class="address__info">
               <strong>Yummy Noodle</strong><br />
@@ -68,6 +131,7 @@
               src="assets/restaurants/yummy_maire.jpg"
               alt="Image du restaurant Yummy Nouilles rue au Maine à Paris"
               class="address__img"
+              loading="lazy"
             />
             <p class="address__info">
               <strong>Les Yummy Nouilles</strong><br />
@@ -102,31 +166,37 @@
             src="assets/social/cat.jpg"
             alt="Image de chat Japonais"
             class="socialMedia__img"
+            loading="lazy"
           />
           <img
             src="assets/social/noodles_bowl.jpg"
             alt="Photo de bol de nouilles"
             class="socialMedia__img"
+            loading="lazy"
           />
           <img
             src="assets/social/bao.jpg"
             alt="Photo de panier vapeur Bao"
             class="socialMedia__img"
+            loading="lazy"
           />
           <img
             src="assets/social/chef.jpg"
             alt="Photo de chef cuisinier"
             class="socialMedia__img"
+            loading="lazy"
           />
           <img
             src="assets/social/Yummy Nouilles img 1.jpg"
             alt="Photo de nouilles en rond"
             class="socialMedia__img"
+            loading="lazy"
           />
           <img
             src="assets/social/beer.jpg"
             alt="Photo de verre de bière"
             class="socialMedia__img"
+            loading="lazy"
           />
         </div>
       </section>
@@ -146,6 +216,7 @@
           src="assets/icons/logo_instagram.svg"
           alt="Logo Instagram"
           class="footer__icon"
+          loading="lazy"
         />
       </a>
       <a href="https://www.facebook.com/yummy_nouilles/">
@@ -153,6 +224,7 @@
           src="assets/icons/logo_facebook.svg"
           alt="Logo Facebook"
           class="footer__icon"
+          loading="lazy"
         />
       </a>
       <a href="https://www.google.com/search?q=yummy+nouilles">
@@ -160,6 +232,7 @@
           src="assets/icons/logo_google.svg"
           alt="Logo Google Maps"
           class="footer__icon"
+          loading="lazy"
         />
       </a>
     </footer>

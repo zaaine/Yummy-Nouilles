@@ -3,8 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yummy Nouilles - Menu</title>
+    <link rel="canonical" href="https://www.yummy_nouilles.com/menu.html" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <meta
+      name="description"
+      content="Découvrez le menu de Yummy Nouilles à Paris. Savourez nos entrées, plats authentiques et délicieux, préparés avec des ingrédients de qualité. Commandez en Click & Collect dès maintenant !"
+    />
+    <meta
+      property="og:title"
+      content="Yummy Nouilles - Meilleurs Nouilles à Paris"
+    />
+    <meta
+      property="og:description"
+      content="Découvrez les meilleures nouilles d'Asie de l’Est au cœur de Paris. Commandez en Click & Collect dès maintenant !"
+    />
+    <meta
+      property="og:image"
+      content="https://www.yummy_nouilles.com/assets/logo.svg"
+    />
+    <meta property="og:url" content="https://yummy_nouilles/index.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Yummy Nouilles - Meilleurs Nouilles à Paris"
+    />
+    <meta
+      name="twitter:description"
+      content="Découvrez les meilleures nouilles d'Asie de l’Est au cœur de Paris. Commandez en Click & Collect dès maintenant !"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.yummy_nouilles/assets/logo.svg"
+    />
+
+    <meta
+      name="description"
+      content="Yummy Nouilles propose les meilleures nouilles d'Asie de l’Est au cœur de Paris. Découvrez nos restaurants, commandez en Click & Collect et retrouvez-nous sur les réseaux sociaux."
+    />
+    <title>
+      Yummy Nouilles - Menu Authentique de Nouilles à Paris | Click & Collect
+    </title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Menu",
+        "name": "Menu Yummy Nouilles",
+        "description": "Découvrez notre sélection d'entrées et de plats authentiques de nouilles préparés avec des ingrédients de qualité.",
+        "hasMenuSection": [
+          {
+            "@type": "MenuSection",
+            "name": "Entrées",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Jiaozi faits maison végétariens",
+                "description": "Raviolis fourrés au maïs et champignons",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "6.50",
+                  "priceCurrency": "EUR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Tofu frit",
+                "description": "Tofu frit à la taïwanaise",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "5.00",
+                  "priceCurrency": "EUR"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Plats",
+            "hasMenuItem": [
+              {
+                "@type": "MenuItem",
+                "name": "Biang biang mian végétariennes",
+                "description": "Nouilles faites à la main avec un bouillon",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "10.00",
+                  "priceCurrency": "EUR"
+                }
+              },
+              {
+                "@type": "MenuItem",
+                "name": "Soupe de nouilles au boeuf",
+                "description": "Nouilles dans un bouillon légèrement épicé",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "12.00",
+                  "priceCurrency": "EUR"
+                }
+              }
+            ]
+          }
+        ],
+        "url": "https://www.votresite.com/menu.html"
+      }
+    </script>
+
     <!-- Lien vers le fichier CSS compilé -->
   </head>
   <body>
@@ -14,6 +119,7 @@
         src="assets/logo.svg"
         alt="Logo Yummy Nouilles"
         class="appBar__logo"
+        loading="lazy"
       />
       <nav class="appBar__nav">
         <a class="appBar__navItem" href="index.html">Accueil</a>
@@ -78,6 +184,7 @@
           src="assets/icons/logo_instagram.svg"
           alt="Logo Instagram"
           class="footer__icon"
+          loading="lazy"
         />
       </a>
       <a href="https://www.facebook.com/yummy_nouilles/">
@@ -85,6 +192,7 @@
           src="assets/icons/logo_facebook.svg"
           alt="Logo Facebook"
           class="footer__icon"
+          loading="lazy"
         />
       </a>
       <a href="https://www.google.com/search?q=yummy+nouilles">
@@ -92,6 +200,7 @@
           src="assets/icons/logo_google.svg"
           alt="Logo Google Maps"
           class="footer__icon"
+          loading="lazy"
         />
       </a>
     </footer>

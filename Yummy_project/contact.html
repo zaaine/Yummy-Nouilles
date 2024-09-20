@@ -2,9 +2,92 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>Yummy Nouilles - Contact</title>
+    <meta
+      name="description"
+      content="Contactez Yummy Nouilles à Paris pour toute question ou commande. Retrouvez nos adresses, appelez-nous au 01 13 86 23 42 ou envoyez-nous un email à yummy@noodles.fr."
+    />
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Yummy Nouilles - Meilleurs Nouilles à Paris"
+    />
+    <meta
+      property="og:description"
+      content="Découvrez les meilleures nouilles d'Asie de l’Est au cœur de Paris. Commandez en Click & Collect dès maintenant !"
+    />
+    <meta
+      property="og:image"
+      content="https://www.yummy_nouilles.com/assets/logo.svg"
+    />
+    <meta property="og:url" content="https://yummy_nouilles/index.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Yummy Nouilles - Meilleurs Nouilles à Paris"
+    />
+    <meta
+      name="twitter:description"
+      content="Découvrez les meilleures nouilles d'Asie de l’Est au cœur de Paris. Commandez en Click & Collect dès maintenant !"
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.yummy_nouilles/assets/logo.svg"
+    />
+
+    <meta
+      name="description"
+      content="Yummy Nouilles propose les meilleures nouilles d'Asie de l’Est au cœur de Paris. Découvrez nos restaurants, commandez en Click & Collect et retrouvez-nous sur les réseaux sociaux."
+    />
+    <title>Yummy Nouilles - Contactez-nous | Adresses et Informations</title>
+    <link rel="canonical" href="https://www.yummy_nouilles.com/contact.html" />
+
     <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
     <link rel="stylesheet" href="styles/main.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Yummy Nouilles",
+        "url": "https://www.yummy_nouilles.com/contact.html",
+        "logo": "https://www.yummy_nouilles.com/assets/logo.svg",
+        "image": "https://www.yummy_nouilles.com/assets/restaurants/yummy_lancry.jpg",
+        "telephone": "+331 44 33 55 22",
+        "email": "yummy@noodles.fr",
+        "address": [
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "185 rue du Lancry",
+            "addressLocality": "Paris",
+            "postalCode": "75010",
+            "addressCountry": "FR"
+          },
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "350 rue Saint-Guillaume",
+            "addressLocality": "Paris",
+            "postalCode": "75007",
+            "addressCountry": "FR"
+          },
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "208 rue au Maire",
+            "addressLocality": "Paris",
+            "postalCode": "75003",
+            "addressCountry": "FR"
+          }
+        ],
+        "openingHours": ["Mo-Su 12:00-23:00", "Mo-Fr 12:00-22:00"],
+        "sameAs": [
+          "https://www.instagram.com/yummy_nouilles/",
+          "https://www.facebook.com/yummy_nouilles/",
+          "https://www.google.com/search?q=yummy+nouilles"
+        ]
+      }
+    </script>
   </head>
 
   <body>
@@ -13,6 +96,7 @@
         src="assets/logo.svg"
         alt="Logo Yummy Nouilles"
         class="appBar__logo"
+        loading="lazy"
       />
       <nav class="appBar__nav">
         <a class="appBar__navItem" href="index.html">Accueil</a>
@@ -34,6 +118,7 @@
               src="assets/restaurants/yummy_lancry.jpg"
               alt="Photo du restaurant Yummy Nouilles rue du Lancry à Paris"
               class="address__img"
+              loading="lazy"
             />
             185 rue du Lancry<br />
             75010 Paris<br />
@@ -46,6 +131,7 @@
               src="assets/restaurants/yummy_main.jpg"
               alt="Photo du restaurant Yummy Nouilles rue Saint-Guillaume à Paris"
               class="address__img"
+              loading="lazy"
             />
             350 rue Saint-Guillaume<br />
             75007 Paris<br />
@@ -59,6 +145,7 @@
               src="assets/restaurants/yummy_maire.jpg"
               alt="Image du restaurant Yummy Nouilles rue au Maine à Paris"
               class="address__img"
+              loading="lazy"
             />
             208 rue au Maire<br />
             75003 Paris<br />
@@ -83,6 +170,7 @@
           src="./assets/icons/logo_instagram.svg"
           alt="Logo Instagram"
           class="footer__icon"
+          loading="lazy"
         />
       </a>
       <a href="https://www.facebook.com/yummy_nouilles/">
@@ -90,6 +178,7 @@
           src="./assets/icons/logo_facebook.svg"
           alt="Logo Facebook"
           class="footer__icon"
+          loading="lazy"
         />
       </a>
       <a href="https://www.google.com/search?q=yummy+nouilles">
@@ -97,6 +186,7 @@
           src="./assets/icons/logo_google.svg"
           alt="Logo Google Maps"
           class="footer__icon"
+          loading="lazy"
         />
       </a>
     </footer>

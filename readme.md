@@ -59,7 +59,7 @@ L'objectif principal de ce projet est de fournir une présence en ligne attrayan
 
 1. **Cloner le dépôt :**
    ```bash
-   git clone https://github.com/votre-utilisateur/yummy-nouilles.git
+   git clone https://github.com/zaaine/Yummy-Nouilles.git
    ```
 
 ![screen projet finalisé ](assets/YummyNouilles.png)
